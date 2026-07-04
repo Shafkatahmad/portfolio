@@ -1,10 +1,26 @@
+import FeaturedTechnologies from "@/components/sections/FeaturedTechnologies";
+import Hero from "@/components/sections/Hero";
+import MyJourney from "@/components/sections/MyJourney";
+import DevelopmentPhilosophy from "@/components/sections/DevelopmentPhilosophy";
+import Skills from "@/components/sections/Skills";
+import Education from "@/components/sections/Education";
+import Projects from "@/components/sections/Projects";
+import CurrentlyLearning from "@/components/sections/CurrentlyLearning";
+import Contact from "@/components/sections/Contact";
+
 const HomePage = () => {
   return (
-    <main>
-      <h1 className="text-5xl font-bold">
-        Portfolio Coming Soon
-      </h1>
-    </main>
+    <>
+      <Hero />
+      <FeaturedTechnologies />
+      <MyJourney />
+      <DevelopmentPhilosophy />
+      <Skills />
+      <Education />
+      <Projects />
+      <CurrentlyLearning />
+      <Contact />
+    </>
   );
 };
 

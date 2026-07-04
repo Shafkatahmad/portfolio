@@ -1,10 +1,19 @@
 import { Outlet } from "react-router-dom";
 
+import Footer from "@/components/sections/Footer";
+import Navbar from "@/components/layout/Navbar";
+
 const RootLayout = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Outlet />
-    </div>
+    <>
+      <Navbar />
+
+      <main>
+        <Outlet />
+      </main>
+
+      <Footer />
+    </>
   );
 };
 
