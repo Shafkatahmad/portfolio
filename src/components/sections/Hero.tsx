@@ -122,7 +122,7 @@ const Hero = () => {
               </p>
 
               <h1 className="max-w-2xl text-5xl font-extrabold leading-tight tracking-tight md:text-6xl xl:text-7xl">
-                Shaf Ahmad
+                Shafkat Ahmad
               </h1>
 
               <h2 className="mt-5 text-xl font-semibold text-slate-300 md:text-2xl">

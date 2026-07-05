@@ -6,19 +6,9 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Section = ({
-  id,
-  className,
-  children,
-}: Props) => {
+const Section = ({ id, className, children }: Props) => {
   return (
-    <section
-      id={id}
-      className={cn(
-        "py-24",
-        className
-      )}
-    >
+    <section id={id} className={cn("py-24", className)}>
       {children}
     </section>
   );

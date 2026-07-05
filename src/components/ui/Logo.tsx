@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { cn } from "@/utils/cn";
 import { SITE } from "@/constants/site";
 
+import profileImage from "@/assets/images/profile.jpg";
+
 type LogoProps = {
   className?: string;
 };
@@ -14,7 +16,7 @@ const Logo = ({ className }: LogoProps) => {
       aria-label="Go to homepage"
       className={cn(
         "group inline-flex items-center gap-3 select-none",
-        className
+        className,
       )}
     >
       {/* Logo Mark */}
@@ -25,12 +27,17 @@ const Logo = ({ className }: LogoProps) => {
           "bg-card",
           "transition-all duration-300",
           "group-hover:border-primary",
-          "group-hover:shadow-[0_0_24px_rgba(37,99,235,0.15)]"
+          "group-hover:shadow-[0_0_24px_rgba(37,99,235,0.15)]",
         )}
       >
-        <span className="text-lg font-bold text-primary">
+        {/* <span className="text-lg font-bold text-primary">
           S
-        </span>
+        </span> */}
+        <img
+          src={profileImage}
+          alt="Portrait of Shaf Ahmad"
+          className="w-full h-full object-cover rounded-xl"
+        />
       </div>
 
       {/* Logo Text */}
@@ -39,7 +46,7 @@ const Logo = ({ className }: LogoProps) => {
           className={cn(
             "text-sm font-semibold tracking-tight",
             "text-foreground transition-colors duration-300",
-            "group-hover:text-white"
+            "group-hover:text-white",
           )}
         >
           {SITE.name}
@@ -49,7 +56,7 @@ const Logo = ({ className }: LogoProps) => {
           className={cn(
             "text-xs text-slate-400",
             "transition-colors duration-300",
-            "group-hover:text-slate-300"
+            "group-hover:text-slate-300",
           )}
         >
           {SITE.title}
